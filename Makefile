@@ -2,7 +2,7 @@ PROJECT_DIR := $(shell dirname $(abspath $(lastword $(MAKEFILE_LIST))))
 
 # Image URL to use all building/pushing image targets
 TAG ?= latest
-GHCR_REPO ?= ghcr.io/timebertt/kubernetes-controller-sharding
+GHCR_REPO ?= ghcr.io/tbhardwaj20/kubernetes-controller-sharding
 SHARDER_IMG ?= $(GHCR_REPO)/sharder:$(TAG)
 CHECKSUM_CONTROLLER_IMG ?= $(GHCR_REPO)/checksum-controller:$(TAG)
 WEBHOSTING_OPERATOR_IMG ?= $(GHCR_REPO)/webhosting-operator:$(TAG)
