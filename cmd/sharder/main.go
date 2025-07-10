@@ -22,7 +22,7 @@ import (
 
 	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
 
-	"github.com/timebertt/kubernetes-controller-sharding/cmd/sharder/app"
+	"github.com/tbhardwaj20/kubernetes-controller-sharding/cmd/sharder/app"
 )
 
 func main() {
