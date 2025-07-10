@@ -37,7 +37,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	shardcontroller "github.com/timebertt/kubernetes-controller-sharding/pkg/shard/controller"
+	shardcontroller "github.com/tbhardwaj20/kubernetes-controller-sharding/pkg/shard/controller"
 )
 
 // Reconciler watches Secrets and creates a ConfigMap for every Secret containing the Secret data's checksums.
