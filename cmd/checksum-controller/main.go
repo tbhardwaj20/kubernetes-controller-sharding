@@ -39,8 +39,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
 	metricsserver "sigs.k8s.io/controller-runtime/pkg/metrics/server"
 
-	shardingv1alpha1 "github.com/timebertt/kubernetes-controller-sharding/pkg/apis/sharding/v1alpha1"
-	shardlease "github.com/timebertt/kubernetes-controller-sharding/pkg/shard/lease"
+	shardingv1alpha1 "github.com/tbhardwaj20/kubernetes-controller-sharding/pkg/apis/sharding/v1alpha1"
+	shardlease "github.com/tbhardwaj20/kubernetes-controller-sharding/pkg/shard/lease"
 )
 
 func main() {
@@ -48,7 +48,7 @@ func main() {
 	opts := newOptions()
 
 	cmd := &cobra.Command{
-		Use:   "checksum-controller",
+		Use:   "my-controller",
 		Short: "Run an example sharded controller",
 		Long: `The checksum-controller is an example for implementing the controller requirements for sharding.
 For this, it creates a shard Lease object and renews it periodically.
@@ -91,7 +91,7 @@ func newOptions() *options {
 			TimeEncoder: zapcore.ISO8601TimeEncoder,
 		},
 
-		controllerRingName: "checksum-controller",
+		controllerRingName: "my-controller",
 		namespace:          metav1.NamespaceDefault,
 	}
 }
