@@ -1,4 +1,4 @@
-module github.com/timebertt/kubernetes-controller-sharding
+module github.com/tbhardwaj20/kubernetes-controller-sharding
 
 go 1.24.0
 
